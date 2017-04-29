@@ -10,17 +10,22 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
-
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+    
+    @IBOutlet weak var statusMenu: NSMenu!
+    
+    //let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
+    
+//    @IBAction func quitClicked(sender: NSMenuItem) {
+//        NSApplication.shared().terminate(self)
+//    }
+    
+    func applicationDidFinishLaunching(aNotification: NSNotification) {
+//        statusItem.title = "WeatherBar"
+//        statusItem.menu = statusMenu
     }
-
-    func applicationWillTerminate(_ aNotification: Notification) {
+    
+    func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
-
-
+    
 }
-
